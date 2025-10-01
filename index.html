@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yujin Oh's Research Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: #f9f9f9;
+    }
+    /* Mobile adjustments */
+    @media only screen and (max-width: 600px) 
+    {
+      body {
+        font-size: 14px;        /* smaller font on mobile */
+        line-height: 1.4;       /* optional: adjust line height */
+      }
+    }
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 { margin: 0; }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1500px;
+      margin: auto;
+      padding: 2rem;
+      background: #fff;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #003366;
+      padding-bottom: 0.3rem;
+      color: #003366;
+    }
+    #news > h2 {
+      color: lightgreen;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 0.6rem;
+    }
+    a { color: #003366; }
+    .sky-blue-link {
+      color: #87CEEB;
+      text-decoration: none;
+    }
+    .sky-blue-link:hover {
+      text-decoration: underline;
+    }
+    .light-green-link {
+      color: lightgreen;
+    }
+    /* ---------- Add figure-row styles here ---------- */
+    .cv-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .cv-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.5em;
+    }
+    .cv-list .institution {
+      flex: 2;           /* left column */
+      text-align: left;
+    }
+    .cv-list .role {
+      flex: 3;           /* middle column */
+      text-align: left;
+    }
+    .cv-list .duration {
+      flex: 1;           /* right column */
+      text-align: right;
+      color: #555;
+      white-space: nowrap; /* prevent line break */
+    }
+    .pub-title {
+      font-size: 1em;
+      margin-bottom: 4px;
+    }
+    .pub-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9em;
+      color: #555;
+    }
+    .pub-meta .duration {
+      white-space: nowrap;
+      margin-left: 12px;
+    }
+    /* ---------- Add figure-row styles here ---------- */
+    .figure-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      flex-wrap: wrap; /* wrap to next line if screen is small */
+    }
+    .figure-row img {
+      width: auto;
+      max-height: 200px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      object-fit: contain;
+      pointer-events: none; /* keep non-interactive */
+      ser-select: none;
+    }  
+  </style>
+</head>
+<body>
+  <header>
+  <h1>Yujin Oh – Research Website</h1>
+    
+  <!-- Contact with icons -->
+  <p class="contacts">
+    yjoh12@gmail.com, yuoh@mgh.harvard.edu | 
+    <a href="https://scholar.google.com/citations?user=4nnw088AAAAJ&hl=en" target="_blank" class="sky-blue-link">
+      <i class="fas fa-graduation-cap"></i> Google Scholar
+    </a> | 
+    <a href="https://www.linkedin.com/in/yujin-oh-971137104" target="_blank" class="sky-blue-link">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </p>
+
+  <!-- Three figures/images in a row -->
+  <div class="figure-row">
+    <img src="images/icml.JPG" alt="ICML2025" alt="Figure" oncontextmenu="return false;" draggable="false" style="pointer-events: none;">
+    <img src="images/oncosoft.JPG" alt="Oncosoft2024" alt="Figure" oncontextmenu="return false;" draggable="false" style="pointer-events: none;">
+    <img src="images/iclr.JPG" alt="ICLR2023" alt="Figure" oncontextmenu="return false;" draggable="false" style="pointer-events: none;">   
+  </div>  
+    
+  <!-- Navigation -->
+  <nav>
+    <a href="#education">
+      <i class="fas fa-university"></i> Education & Career
+    </a>
+    <a href="#interests">
+      <i class="fas fa-lightbulb"></i> Research Interests
+    </a>
+    <a href="#news" class="light-green-link">
+      <i class="fas fa-book"></i> News
+    </a>
+    <a href="#funds">
+      <i class="fas fa-dollar-sign"></i> Funds
+    </a>
+    <a href="#publications">
+      <i class="fas fa-book"></i> Selected 10 Publications
+    </a>
+  </nav>
+  
+</header>
+
+  <section id="education">
+  <h2>Education & Career</h2>
+  <ul class="pub-list">
+    <li>
+      <div class="pub-title">
+        <b>Harvard Medical School & Massachusetts General Hospital (MGH), Boston, USA</b>
+      </div>
+      <div class="pub-meta">
+        <span class="role">Postdoctoral Researcher at Dept. of Radiology (Superviser: Prof. Quanzheng Li)</span>
+        <span class="duration">2024 – 2026</span>
+      </div>
+    </li>
+    <li>
+      <div class="pub-title">
+        <b>Korea Advanced Institute of Science & Technology (KAIST), Daejeon, South Korea</b>
+      </div>
+      <div class="pub-meta">
+        <span class="role">Ph.D. from School of AI (Supervisor: Prof. Jong Chul Ye)</span>
+        <span class="duration">2019 – 2024</span>
+      </div>
+    </li>
+    <li>
+      <div class="pub-title">
+        <b>LG Electronics Inc., Seoul, South Korea</b>
+      </div>
+      <div class="pub-meta">
+        <span class="role">Senior SW Engineer at Chief Technology Officer (CTO) Division</span>
+        <span class="duration">2014 – 2019</span>
+      </div>
+    </li>
+    <li>
+      <div class="pub-title">
+        <b>Korea University, Seoul, South Korea</b>
+      </div>
+      <div class="pub-meta">
+        <span class="role">M.S. & B.S. from Dept. of Biomedical Engineering (Supervisor: Prof. Beop-Min Kim)</span>
+        <span class="duration">2008 – 2014</span>
+      </div>
+    </li>
+  </ul>
+  </section>
+
+  <section id="interests">
+    <h2>Research Interests</h2>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+    <li>
+        <b>Generalizable AI for Medical Image Analysis</b>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; margin-bottom: 20px;">
+          <img src="images/GenAI.png" alt="Generalizable AI" alt="Figure" oncontextmenu="return false;" draggable="false" style="pointer-events: none; width: 100%; max-width: 1000px; height: auto;"> 
+        </div>
+    </li>
+    <li>
+        <b>From Theory to Practical AI for Real-World Data Adaptation</b>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; margin-bottom: 20px;">
+          <img src="images/TheoryAI.png" alt="Generalizable AI" alt="Figure" oncontextmenu="return false;" draggable="false" style="pointer-events: none; width: 100%; max-width: 1000px; height: auto;"> 
+        </div>
+    </li>
+    <li>
+      <b>Multimodal and Agentic AI for Oncology Treatment Planning Support</b>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; margin-bottom: 20px">
+        <img src="images/mm.png" alt="Multimodal AI" alt="Figure" oncontextmenu="return false;" draggable="false" style="pointer-events: none; width: 100%; max-width: 1000px; height: auto;"> 
+      </div>
+    </li>
+    
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+    <li>
+      <p>Looking for M.S. and Ph.D. students interested in research collaboration, with my upcoming appointment as an Assistant Professor at a leading university in Seoul, South Korea, starting March 2026. For further details, please email me</p>
+    </li>
+  </section>
+
+  <section id="funds">
+    <h2>Funds</h2>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          <b>Cancer Treatment Optimization based on Treatment-Response centered Integration of Clinical-Bio Bigdata and Multimodal AI</b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">National Research Foundation (NRF) of Korea, Co-Investigator</span>
+          <span class="duration">2026 – 2027</span>
+        </div>
+      </li>
+      <li>
+        <div class="pub-title">
+          <b>Unsupervised Learning-based Advanced Cognitive Framework of AI for Development of Interpretable Medical Diagnostic System</b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">Sejong Science Fellowship (Overseas Track), National Research Foundation (NRF) of Korea, Principal Investigator, $50,000 USD</span>
+          <span class="duration">2024 – 2025</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+  
+  <section id="publications">
+    <h2>Selected 10 Publications</h2>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          <b><a href="https://arxiv.org/abs/2410.00046" target="_blank">
+            Mixture of Multicenter Experts in Multimodal AI for Debiased Radiotherapy Target Delineation 
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">ArXiv Preprint</span>
+          <span class="duration">In Revision</span>
+        </div>
+      </li>
+      
+      <li>
+        <div class="pub-title">
+          <b><a href="https://openreview.net/forum?id=BUONdewsBa" target="_blank">
+            Distribution-aware Fairness Learning in Medical Image Segmentation
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">ICML, Top 2.6% Spotlight</span>
+          <span class="duration">2025</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <b><a href="https://www.sciencedirect.com/science/article/pii/S1361841525001938" target="_blank">
+            End-to-end Breast Cancer Radiotherapy Planning via LMMs with Consistency Embedding
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">Medical Image Analysis, vol. 105, p. 103646</span>
+          <span class="duration">2025</span>
+        </div>
+      </li>
+  
+      <li>
+        <div class="pub-title">
+          <b><a href="https://www.nature.com/articles/s41467-024-53387-y" target="_blank">
+            LLM-driven Multimodal Target Volume Contouring in Radiation Oncology
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">Nature Communications, vol. 15, 9186</span>
+          <span class="duration">2024</span>
+        </div>
+      </li>
+  
+      <li>
+        <div class="pub-title">
+          <b><a href="https://arxiv.org/abs/2403.14183" target="_blank">
+            OTSeg: Multi-prompt Sinkhorn Attention for Zero-shot Semantic Segmentation
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">ECCV</span>
+          <span class="duration">2024</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <b><a href="https://www.sciencedirect.com/science/article/abs/pii/S1361841523002827" target="_blank">
+            C-DARL: Contrastive Diffusion Adversarial Representation Learning for Label-free Blood Vessel Segmentation
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">Medical Image Analysis, vol. 91, p. 103022</span>
+          <span class="duration">2024</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="pub-title">
+          <b><a href="https://ieeexplore.ieee.org/document/10124975" target="_blank">
+            Multi-scale Hybrid Vision Transformer for Learning Gastric Histology: AI-based Decision Support System for Gastric Cancer Treatment
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">IEEE JBHI, vol. 27, no. 8, pp. 4143-4153</span>
+          <span class="duration">2023</span>
+        </div>
+      </li>
+  
+      <li>
+        <div class="pub-title">
+          <b><a href="https://openreview.net/forum?id=H0gdPxSwkPb" target="_blank">
+            Diffusion Adversarial Representation Learning for Self-supervised Vessel Segmentation
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">ICLR</span>
+          <span class="duration">2023</span>
+        </div>
+      </li>
+  
+      <li>
+        <div class="pub-title">
+          <b><a href="https://arxiv.org/abs/2104.05892" target="_blank">
+            CXR Segmentation by AdaIN-based Domain Adaptation and Knowledge Distillation
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">ECCV</span>
+          <span class="duration">2022</span>
+        </div>
+      </li>
+  
+      <li>
+        <div class="pub-title">
+          <b><a href="https://ieeexplore.ieee.org/document/9090149" target="_blank">
+            Deep Learning Covid-19 Features on CXR using Limited Training Data Sets
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">IEEE TMI, vol. 39, no. 8, pp. 2688–2700</span>
+          <span class="duration">2020</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+  
+</body>
+</html>
